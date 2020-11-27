@@ -1,3 +1,4 @@
+import 'package:envato_holigo_app/screens/WelcomScreen.dart';
 import 'package:envato_holigo_app/widgets/CustomButton.dart';
 import 'package:envato_holigo_app/widgets/LogoImageTitle.dart';
 import 'package:flutter/material.dart';
@@ -33,6 +34,7 @@ class StartAdventure extends StatelessWidget {
             ),
             CustomButton(
               title: "Next",
+              goto: WelcomeScreen(),
             ),
           ],
         ),
