@@ -1,3 +1,4 @@
+import 'package:envato_holigo_app/screens/WelcomScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -12,53 +13,33 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Container(
-          padding: EdgeInsets.symmetric(
-            vertical: 50,
+      theme: ThemeData(
+        primaryColor: Color(0xffF2613C),
+        textTheme: TextTheme(
+          headline5: TextStyle(
+            fontWeight: FontWeight.w800,
+            fontSize: 28,
+            // color: Colors.red,
+            color: Color(0xff092c4c),
           ),
-          width: double.infinity,
-          height: double.infinity,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              alignment: Alignment.topCenter,
-              fit: BoxFit.cover,
-              image: AssetImage(
-                'assets/illustration.png',
-              ),
-            ),
+          bodyText1: TextStyle(
+            fontWeight: FontWeight.w800,
+            fontSize: 24,
+            // color: Colors.red,
+            color: Color(0xff092c4c),
           ),
-          child: Column(
-            children: [
-              Column(
-                children: [
-                  Image(
-                    image: AssetImage(
-                      'assets/logo.png',
-                    ),
-                  ),
-                  SizedBox(
-                    height: 50,
-                  ),
-                  Text(
-                    "WELCOME TO HOLIGO",
-                    style: TextStyle(
-                        // fontFamily: "NunitoSans-ExtraBold",
-                        ),
-                  ),
-                  SizedBox(
-                    height: 25,
-                  ),
-                  Text(
-                    "Plan your trip and explore your favourite destinations with us",
-                  ),
-                ],
-              )
-            ],
+          bodyText2: TextStyle(
+            fontWeight: FontWeight.w400,
+            fontSize: 15,
+            letterSpacing: 0.28,
+            // color: Colors.red,
+            color: Color(0xff092c4c),
           ),
         ),
+        fontFamily: 'NunitoSans',
       ),
+      debugShowCheckedModeBanner: false,
+      home: WelcomeScreen(),
     );
   }
 }

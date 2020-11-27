@@ -60,15 +60,14 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: NunitoSans-Regular
+    - family: NunitoSans
       fonts:
         - asset: fonts/Nunito_Sans/NunitoSans-Regular.ttf
-    - family: NunitoSans-Bold
-      fonts:
-        - asset: fonts/Nunito_Sans/NunitoSans-Bold.ttf
-    - family: NunitoSans-ExtraBold
-      fonts:
+          weight: 400
         - asset: fonts/Nunito_Sans/NunitoSans-ExtraBold.ttf
+          weight: 800
+        - asset: fonts/Nunito_Sans/NunitoSans-Bold.ttf
+          weight: 700
     
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
